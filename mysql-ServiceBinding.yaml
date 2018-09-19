@@ -1,0 +1,8 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
+metadata:
+  name: mysql-servicebinding
+spec:
+  instanceRef:
+    name: wp-mysql
+  secretName: mysql-secret
